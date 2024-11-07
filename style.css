@@ -673,6 +673,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 60px;
 }
 
@@ -771,7 +772,8 @@ body {
   }
 
   .hero .img-container {
-    width: 526px;
+    max-width: 526px;
+    width: 100%;
   }
 
   .work {
@@ -782,11 +784,13 @@ body {
   .work .text-block {
     width: 436px;
     gap: 24px;
+    width: 100%;
   }
 
   .work .img-container {
-    width: 527.74px;
+    max-width: 527.74px;
     height: 328.48px;
+    width: 100%;
   }
 
   .work .text-block h2 {
@@ -804,8 +808,9 @@ body {
   }
 
   .work-img {
-    width: 528px;
+    max-width: 528px;
     height: 491.56px;
+    width: 100%;
   }
 
   .customise .text-block {
@@ -818,8 +823,9 @@ body {
   }
 
   .work.customise-need .img-container {
-    width: 534px;
+    max-width: 534px;
     height: 397.95px;
+    width: 100%;
   }
 
   .work.customise-need .text-block h2::after {
@@ -831,8 +837,9 @@ body {
   }
 
   .data-img {
-    width: 562px;
+    max-width: 562px;
     height: 314.53px;
+    width: 100%;
   }
 
   .your-work {
@@ -861,8 +868,9 @@ body {
   }
 
   .apps-img {
-    width: 528px;
+    max-width: 528px;
     height: 427.11px;
+    width: 100%;
   }
 
   .apps .hero-container {
@@ -952,8 +960,10 @@ body {
   }
 
   .work-img {
-    width: 454px;
+    max-width: 454px;
     height: 422.67px;
+    object-fit: contain;
+    width: 100%;
   }
 
   .work.customise-need .text-block {
@@ -1006,7 +1016,8 @@ body {
   }
   .data-img {
     order: -1;
-    width: 513px;
+    max-width: 513px;
+    width: 100%;
     height: 287.11px;
     object-fit: contain;
   }
@@ -1024,7 +1035,8 @@ body {
   }
 
   .apps-img {
-    width: 485px;
+    max-width: 485px;
+    width: 100%;
     height: 392.33px;
     object-fit: contain;
     margin-bottom: 100px;
@@ -1067,7 +1079,9 @@ body {
   }
 
   .footer .Logo-description img {
-    width: 351.68px;
+    max-width: 351.68px;
+    object-fit: contain;
+    width: 100%;
     height: 62px;
   }
   .footer-info {
@@ -1083,9 +1097,13 @@ body {
   .footer-btm ul {
     padding-bottom: 20.5px;
     border-bottom: 1px solid #2e4e73;
+    gap: 50px;
   }
   .footer-btm > img {
     padding-top: 20.5px;
+  }
+  .img-container {
+    width: 100% !important;
   }
 }
 
@@ -1130,7 +1148,8 @@ body {
   }
 
   .work-img {
-    width: 279px;
+    max-width: 279px;
+    width: 100%;
     height: 259.74px;
     margin-top: 60px;
   }
@@ -1377,5 +1396,8 @@ body {
   .header img {
     width: 133.97px;
     height: 24px;
+  }
+  .footer .section-container {
+    padding-top: 170px;
   }
 }
